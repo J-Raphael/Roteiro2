@@ -28,6 +28,6 @@ int main()
 	converte(horas, minutos);
 	
 	printf("\n\n");
-	system("PAUSE");
+//	system("PAUSE");
 	return 0;
 }

@@ -21,6 +21,6 @@ int main()
 	sequencia(n);
 	
 	printf("\n\n");
-	system("PAUSE");
+//	system("PAUSE");
 	return 0;
 }

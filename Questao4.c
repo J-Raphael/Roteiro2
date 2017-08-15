@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define limpa_tela()  system("cls")// Ativo no Windows.
-//#define limpa_tela()  system("clear") Ativar no Linux.
-#define Pause()  system("PAUSE")
+//#define limpa_tela()  system("cls")// Ativo no Windows.
+#define limpa_tela()  system("clear") // Ativar no Linux.
+#define Pause()  getchar()
+
+
 
 int eh_divisivel(int x, int y){
 	if( x%y == 0){
@@ -34,7 +36,7 @@ int eh_primo(int x){
 int menu(){
 	int opcao;
 	do{			
-		limpa_tela();
+//		limpa_tela();
 		printf("-------------------\n");
 		printf("|1------- eh_primo|\n");
 		printf("|2--- eh_divisivel|\n");
@@ -48,7 +50,6 @@ int menu(){
 }
 
 void verifica_Primo(){
-	limpa_tela();
 	int n;
 	printf("Digite um numero: ");
 	 scanf("%d", &n);
@@ -64,7 +65,6 @@ void verifica_Primo(){
 }
 
 void verifica_Divisivel(){
-	limpa_tela();
 	int x, y;
 	printf("Digite dois numeros: ");
 	 scanf("%d %d", &x, &y);
@@ -83,7 +83,7 @@ int main()
 {
 	int x;
 	do{
-		limpa_tela();
+//		limpa_tela();
 		x = menu();
 		if( x == 1){ verifica_Primo();}
 		if( x == 2){ verifica_Divisivel();}

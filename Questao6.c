@@ -45,6 +45,6 @@ int main()
 		printf("Telefone valido.\n\n");
 	}
 	
-	system("PAUSE");
+//      system("PAUSE");
 	return 0;
 }

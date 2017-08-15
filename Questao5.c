@@ -54,6 +54,6 @@ int main()
 	
 	
 	printf("\n\n");
-	system("PAUSE");
+//	system("PAUSE");
 	return 0;
 }
